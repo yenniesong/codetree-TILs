@@ -12,10 +12,9 @@ public class Main {
         for(int i = 1; i < 10; i+=2) {
             sum += arr[i];
         }
-        System.out.print(sum + " ");
 
         int oddSum = 0;
-        float avg = 0;
+        double avg = 0;
         int cnt=0;
         for(int i = 2; i < 10; i+=3) {
             oddSum += arr[i];
@@ -23,8 +22,8 @@ public class Main {
             // System.out.print(arr[i]);
             // System.out.println(cnt);
         }
-        avg = oddSum/cnt;
+        avg = (double)oddSum/cnt;
 
-        System.out.printf("%.1f", avg);
+        System.out.printf("%d %.1f", sum, avg);
     }
 }
