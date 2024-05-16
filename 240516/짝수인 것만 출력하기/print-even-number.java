@@ -19,6 +19,7 @@ public class Main {
                     evenArr[j] = arr[i];
                     System.out.print(evenArr[j] + " ");
                 }
+                break;
             }
         }
         
