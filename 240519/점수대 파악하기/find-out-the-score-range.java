@@ -11,7 +11,7 @@ public class Main {
             if(arr[i] == 0){
                 break;
             }
-            if(arr[i] < i){
+            if(arr[i] < 10){
                 continue;
             }
             cntArr[arr[i] / 10]++;   
