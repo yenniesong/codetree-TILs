@@ -13,10 +13,10 @@ public class Main {
 
             if(cold == 'Y' && temp >= 37) {
                 type = 0;
-            } else if(cold == 'N' && temp >= 37){
-                type = 2;
-            } else if(cold == 'Y') {
+            } else if(cold == 'N' && temp >= 37) {
                 type = 1;
+            } else if(cold == 'Y') {
+                type = 2;
             } else {
                 type = 3;
             }
