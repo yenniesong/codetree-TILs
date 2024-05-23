@@ -4,39 +4,38 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int arr[][] = new int[2][4];
-        double rowAvg = 0, colAvg = 0, ttAvg = 0;
 
         for(int i = 0; i < 2; i++) {
-            int sum = 0;
             for(int j = 0; j < 4; j++) {
                 arr[i][j] = sc.nextInt();
-                sum += arr[i][j];
             }
-            rowAvg = sum / 4;
-            System.out.print(rowAvg + " ");
         }
-        System.out.println();
 
-        for(int j = 0; j < 4; j++) {
+        for(int i = 0; i < 2; i++) {
             int sum = 0;
-            for(int i = 0; i < 2; i++) {
+            for(int j = 0; j < 4; j++) {
                 sum += arr[i][j];
             }
-            colAvg = sum / 2;
-            System.out.print(colAvg + " ");
+            System.out.printf("%.1f ", (double)sum / 4);
         }
         System.out.println();
 
-        int idx = 0;
-        int ttSum = 0;
+        for(int i = 0; i < 4; i++) {
+            int sum = 0;
+            for(int j = 0; j < 2; j++) {
+                sum += arr[j][i];
+            }
+            System.out.printf("%.1f ", (double)sum / 2);
+        }
+        System.out.println();
+
+        int sum = 0;
         for(int i = 0; i < 2; i++) {
             for(int j = 0; j < 4; j++) {
-                ttSum += arr[i][j];
-                idx++;
+                sum += arr[i][j];
             }
-            ttAvg = ttSum / idx;
         }
-        System.out.print(ttAvg + " ");
+        System.out.printf("%.1f ", (double)sum / 8);
 
     }
 }
